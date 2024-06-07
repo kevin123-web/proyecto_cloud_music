@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Audio Personalizado</title>
+</head>
+<body>
+    <div class="card" >
+        <center><img src="{{ data[1] }}" class="card-img-top" alt="..." width="400px" height="400px"></center>
+        <div class="card-body">
+            <p class="card-text">
+                <center>
+                    <div class="mb-2">
+                        <p class="card-title">{{ data[2]}}</p>
+                        <span class="card-subtitle span-cancion">{{ data[3] }} - {{ data[4] }}</span>
+                    </div>
+                    <audio controls autoplay>
+                        <source src="{{ url }}" type="audio/mpeg">
+                        Tu navegador no soporta la reproducción de audio.
+                    </audio>
+                </center>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
